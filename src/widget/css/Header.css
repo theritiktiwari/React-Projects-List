@@ -1,0 +1,36 @@
+
+.nav{
+    background-color: var(--hf-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    text-transform: uppercase;
+}
+
+.left{
+    flex: 1;
+    text-align: center;
+}
+.left h1{
+    font-size: 1.9rem;
+}
+
+.right{
+    flex: 3;
+}
+
+.nav-list{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list li{
+    font-weight: 900;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+}
