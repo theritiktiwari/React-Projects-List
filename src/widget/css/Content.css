@@ -9,10 +9,7 @@ body::-webkit-scrollbar {
   width: 90%;
   margin: 25px auto;
 }
-.content h1 {
-  text-align: center;
-  text-transform: uppercase;
-}
+
 .content .boxes {
   display: grid;
   grid-template-columns: auto auto auto;

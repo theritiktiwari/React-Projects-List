@@ -7,7 +7,7 @@ export const Header = () => {
     return (
         <nav className="nav">
             <div className="left">
-                <h1>Widgets</h1>
+                <h1>Projects</h1>
             </div>
             <div className="right">
                 <ul className="nav-list">

@@ -35,7 +35,7 @@ export const Footer = () => {
                 
             <div className="copyright">
                 <hr/>
-                <p>Copyright &copy; {new Date().getFullYear()} <a href="/">Widgets</a>. All Rights Reserved.</p>
+                <p>Copyright &copy; {new Date().getFullYear()} <a href="/">Projects</a>. All Rights Reserved.</p>
             </div>
         </footer>
     );

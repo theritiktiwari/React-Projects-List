@@ -4,7 +4,6 @@ import './css/Content.css';
 export const Content = () => {
     return (
         <div className="content">
-            <h1>Project List</h1>
             <div className="boxes">
 
                 <a href="/clock">
