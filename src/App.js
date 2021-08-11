@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Header } from "./widget/Header";
 import { Footer } from "./widget/Footer";
 import { Content } from "./widget/Content";
+import { Clock } from "./widget/Clock";
 
 function App() {
   return (
@@ -20,7 +21,10 @@ function App() {
               </>
             )
           }}>
+          </Route>
 
+          <Route exact path="/clock">
+            <Clock />
           </Route>
         </Switch>
 

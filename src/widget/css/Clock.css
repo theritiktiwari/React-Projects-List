@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.clck, .date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 45vh;
+  /* background-color: #000; */
+  color: #FFF;
+}
+
+#clock {  
+  font-size: 10rem;
+  font-family: "Open Sans", sans-serif;
+  color: #FFF;
+  font-weight: 900;
+  text-shadow: 0 0 10px rgba(21, 92, 171, 0.3), 0 0 30px rgba(21, 92, 171, 0.3);
+}
+
+#date{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
