@@ -1,12 +1,11 @@
-// import './App.css';
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Header } from "./widget/Header";
 import { Footer } from "./widget/Footer";
 import { Content } from "./widget/Content";
-// import { Alarm } from './widget/Alarm';
 import { BMICalculator } from './widget/BMICalculator';
 import { Clock } from "./widget/Clock";
+import { ColorChanger } from "./widget/ColorChanger";
 
 
 function App() {
@@ -25,21 +24,20 @@ function App() {
             )
           }}>
           </Route>
-          
-          {/* <Route exact path="/alarm">
-            <Alarm />
-          </Route> */}
 
           <Route exact path="/bmi">
             <BMICalculator />
           </Route>
-=======
+
           <Route exact path="/clock">
             <Clock />
           </Route>
 
-        </Switch>
+          <Route exact path="/colorChanger">
+            <ColorChanger />
+          </Route>
 
+        </Switch>
       </Router>
     </>
   );

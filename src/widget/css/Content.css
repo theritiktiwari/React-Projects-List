@@ -34,6 +34,7 @@ body::-webkit-scrollbar {
 }
 .content .boxes .box img {
   width: 280px;
+  height: 180px;
   margin: 10px;
   border-radius: 10px;
 }

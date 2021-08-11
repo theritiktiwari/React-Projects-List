@@ -5,6 +5,7 @@ import './css/Clock.css';
 export const Clock = () => {
     
     const clock = () => {
+        
         // Get the Hour, Minute and Seconds
         let currentTime = new Date();
         let currentHours = currentTime.getHours();
@@ -25,13 +26,12 @@ export const Clock = () => {
 
         // String to make time correct time format
         
-        let currentTimeStr = "";
-        currentTimeStr += currentHours + " : " + currentMinutes + " : " + currentSeconds + " : " + timeOfDay;
-        let ret = document.getElementById('clock').innerHTML = currentTimeStr;
+        let currentTimeStr = currentHours + " : " + currentMinutes + " : " + currentSeconds + " : " + timeOfDay;
+        document.getElementById('clock').innerHTML = currentTimeStr;
     }
 
     return (  
-        <section className="clck" onLoad={clock, setInterval(clock, 1000)}>
+        <section className="clck" onLoad={() => clock, setInterval(clock, 1000)}>
             <div id="clock"></div>
         </section>
     )

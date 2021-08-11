@@ -45,18 +45,18 @@ h2{
 }
 
 .btn{
-    padding: 15px 30px;
+    padding: 12px 30px;
     font-size: 1rem;
     border-radius: 5px;
-    background-color: #83a2e0;
     color: var(--primary-color);
     border: none;
     cursor: pointer;
+    background-color: #9abcff;
     transition: all .6s ease-in-out;
 }
 
 .btn:hover{
-    background-color: #9abcff;
+    background-color: #83a2e0;
 }
 
 #result{
