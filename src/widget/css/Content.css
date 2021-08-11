@@ -43,6 +43,7 @@ body::-webkit-scrollbar {
   margin: 0 12px;
   padding: 5px;
   text-align: justify;
+  line-height: 150%;
 }
 .content .boxes .box h3 {
   text-transform: uppercase;

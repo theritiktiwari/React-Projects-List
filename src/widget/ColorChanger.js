@@ -21,7 +21,7 @@ export const ColorChanger = () => {
         <section>
             <div id="container">
                 <input type="text" onChange={handleColor} onInput={Capital} placeholder="#FFFFFF"/>
-                <button className="button" onClick={Change}>Click</button>
+                <button className="button" onClick={Change}>Change Color</button>
             </div>
         </section>
     )

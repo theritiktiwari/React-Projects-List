@@ -25,7 +25,7 @@ export const Content = () => {
 
                 <a href="/colorChanger">
                     <div className="box">
-                        <img src="https://i.ibb.co/LP06KJx/Color-Changer.png" alt="Color Changer" />
+                        <img src="https://i.ibb.co/FhzF6Nd/Color-Changer.png" alt="Color Changer" />
                         <h3>Color Changer</h3>
                         <p>This is a HEX code color changer which takes hex code as input and change the background color, made with HTML, CSS and JavaScript.</p>
                     </div>

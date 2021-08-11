@@ -17,6 +17,12 @@ footer{
     height: auto;
 }
 
+.insideContainer p{
+    text-align: justify;
+    line-break: loose;
+    line-height: 180%;
+}
+
 .outContainer h2{
     margin: 20px 0;
     position: relative;

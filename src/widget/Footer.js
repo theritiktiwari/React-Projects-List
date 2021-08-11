@@ -28,12 +28,8 @@ export const Footer = () => {
                 </div>
                 
                 <div className="insideContainer">
-                    <h2>Site Links</h2>
-                    <ul className="links">
-                        <li><a href="/clock">Clock</a></li>
-                        <li><a href="/colorChanger">Color Changer</a></li>
-                        <li><a href="/bmi">BMI Calculator</a></li>
-                    </ul>
+                    <h2>About</h2>
+                    <p>This is a React Website to showcase some projects. Hope you'll like this. Till then Keep Supporting, Learning and Loving.</p>
                 </div>
             </div>
                 
