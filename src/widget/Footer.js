@@ -1,11 +1,10 @@
 import React from 'react';
 import './css/Footer.css';
-import '../theme.css';
 
 export const Footer = () => {
     return (
         <footer>
-            <div className="container">
+            <div className="outContainer">
                 <div className="insideContainer">
                     <h2>Social Links</h2>
                     <ul className="links">

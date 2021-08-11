@@ -5,7 +5,7 @@ footer{
     position: relative;
 }
 
-.container{
+.outContainer{
     width: 80%;
     margin: auto;
     display: flex;
@@ -17,13 +17,13 @@ footer{
     height: auto;
 }
 
-.container h2{
+.outContainer h2{
     margin: 20px 0;
     position: relative;
     text-transform: uppercase;
 }
 
-.container h2::before{
+.outContainer h2::before{
     content: "";
     position: absolute;
     top: 35px;
