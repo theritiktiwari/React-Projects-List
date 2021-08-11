@@ -30,7 +30,6 @@ export const Footer = () => {
                 <div className="insideContainer">
                     <h2>Site Links</h2>
                     <ul className="links">
-                        <li><a href="/">Home</a></li>
                         <li><a href="/clock">Clock</a></li>
                         <li><a href="/alarm">Alarm</a></li>
                         <li><a href="/colorChanger">Color Changer</a></li>
