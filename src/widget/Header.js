@@ -13,7 +13,7 @@ export const Header = () => {
                 <ul className="nav-list">
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/clock">Clock</Link></li>
-                    <li><Link to="/alarm">Alarm</Link></li>
+                    {/* <li><Link to="/alarm">Alarm</Link></li> */}
                     <li><Link to="/bmi">BMI Calculator</Link></li>
                     <li><Link to="/colorChanger">Color Changer</Link></li>
                 </ul>

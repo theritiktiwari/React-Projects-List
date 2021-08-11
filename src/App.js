@@ -1,10 +1,11 @@
-import './App.css';
+// import './App.css';
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Header } from "./widget/Header";
 import { Footer } from "./widget/Footer";
 import { Content } from "./widget/Content";
 import { Alarm } from './widget/Alarm';
+import { BMICalculator } from './widget/BMICalculator';
 
 function App() {
   return (
@@ -22,8 +23,13 @@ function App() {
             )
           }}>
           </Route>
-          <Route exact path="/alarm">
+          
+          {/* <Route exact path="/alarm">
             <Alarm />
+          </Route> */}
+
+          <Route exact path="/bmi">
+            <BMICalculator />
           </Route>
         </Switch>
 

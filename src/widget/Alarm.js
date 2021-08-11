@@ -4,6 +4,9 @@ import $ from 'jquery';
 
 export const Alarm = () => {
 
+    let changeText = (props) => {
+
+    }
     // function to show the clock
     let timeOfDay = '';
     function clock(){
@@ -27,7 +30,8 @@ export const Alarm = () => {
         
         // String to make time correct time format
         let currentTimeStr = `${currentHours} : ${currentMinutes} : ${currentSeconds} ${timeOfDay}`;
-        document.getElementById('clock').innerHTML = currentTimeStr;
+        // document.getElementById('clock').innerHTML = currentTimeStr;
+
     }
 
     // Adding 0 and contraints to 24 hours
@@ -145,9 +149,9 @@ export const Alarm = () => {
                         </div>
                         <button type="submit" id="btn" className="btn btn-block btn-primary my-3">Set Alarm</button>
                     </form>
-                </div>
+                {/* </div>
 
-                <div className="container my-5 text-center">
+                <div className="container my-5 text-center"> */}
                     <div className="row">
                         <div className="col-md-6 mx-auto text-center">
                             <h2>Clock</h2>

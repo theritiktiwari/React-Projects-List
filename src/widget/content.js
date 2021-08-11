@@ -1,5 +1,4 @@
 import React from 'react';
-import '../theme.css';
 import './css/Content.css';
 
 export const Content = () => {
@@ -16,17 +15,17 @@ export const Content = () => {
                     </div>
                 </a>
                 
-                <a href="/alarm">
+                {/* <a href="/alarm">
                     <div className="box">
-                        <img src="https://source.unsplash.com/160x90/?nature,water" alt="Image" />
+                        <img src="https://source.unsplash.com/160x90/?nature,water" alt="Alarm" id="alarm"/>
                         <h3>Alarm</h3>
                         <p>This is a digital alarm clock which take hour, minute and seconds (only within a day) as input and set alarm, made with HTML, CSS and JavaScript.</p>
                     </div>
-                </a>
+                </a> */}
 
                 <a href="/bmi">
                     <div className="box">
-                        <img src="https://source.unsplash.com/160x90/?nature,water" alt="Image" />
+                    <img src="https://source.unsplash.com/160x90/?nature,water" alt="BMI" id="BMI"/>
                         <h3>BMI Calculator</h3>
                         <p>This is a BMI Calculator which take height and weight as input and provide you BMI, made with HTML, CSS and JavaScript.</p>
                     </div>
