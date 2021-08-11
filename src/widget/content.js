@@ -15,14 +15,6 @@ export const Content = () => {
                         <p>This is a digital clock show the time, date and day, made with HTML, CSS and JavaScript. You can add this in your project.</p>
                     </div>
                 </a>
-                
-                <a href="/alarm">
-                    <div className="box">
-                        <img src="https://source.unsplash.com/160x90/?nature,water" alt="Alarm" />
-                        <h3>Alarm</h3>
-                        <p>This is a digital alarm clock which take hour, minute and seconds (only within a day) as input and set alarm, made with HTML, CSS and JavaScript.</p>
-                    </div>
-                </a>
 
                 <a href="/bmi">
                     <div className="box">

@@ -25,33 +25,14 @@ export const Clock = () => {
 
         // String to make time correct time format
         
-        let currentTimeStr = `${currentHours} : ${currentMinutes} : ${currentSeconds} ${timeOfDay}`;
-        document.getElementById('clock').innerHTML = currentTimeStr;
+        let currentTimeStr = "";
+        currentTimeStr += currentHours + " : " + currentMinutes + " : " + currentSeconds + " : " + timeOfDay;
+        let ret = document.getElementById('clock').innerHTML = currentTimeStr;
     }
 
-    const date = () => {
-    
-        let d = new Date();
-        
-        let weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 'Saturday'];
-        let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-        
-        let n = weekday[d.getDay()] + "\n" + month[d.getMonth()] + " " + ((d.getDate() < 10) ? ('0' + d.getDate()) : d.getDate()) + ", " + d.getFullYear();
-        document.getElementById('date').innerHTML = n;
-        console.log(n);
-    }
-
-    window.addEventListener("load", clock);
     return (  
-        <>
-            <section className="clck" onLoad={clock, setInterval(clock, 1000)}>
-                {/* <div id="clock"></div> */}
-            </section>
-            <section onLoad={date} className="date">
-                <div id="date"></div>
-            </section>
-        </>
+        <section className="clck" onLoad={clock, setInterval(clock, 1000)}>
+            <div id="clock"></div>
+        </section>
     )
-
-    
 }

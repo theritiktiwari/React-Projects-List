@@ -31,7 +31,6 @@ export const Footer = () => {
                     <h2>Site Links</h2>
                     <ul className="links">
                         <li><a href="/clock">Clock</a></li>
-                        <li><a href="/alarm">Alarm</a></li>
                         <li><a href="/colorChanger">Color Changer</a></li>
                         <li><a href="/bmi">BMI Calculator</a></li>
                     </ul>
