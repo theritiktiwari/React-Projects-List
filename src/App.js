@@ -15,14 +15,9 @@ function App() {
         <Header />
 
         <Switch>
-          <Route exact path="/" render={() => {
-            return(
-              <>
-                <Content />
-                <Footer />
-              </>
-            )
-          }}>
+          <Route exact path="/" >
+            <Content />
+            <Footer />
           </Route>
 
           <Route exact path="/bmi">

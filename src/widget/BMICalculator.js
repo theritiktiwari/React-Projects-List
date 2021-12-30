@@ -29,14 +29,14 @@ export const BMICalculator = () => {
 
     return (
         <section>
-            <div class="container">
+            <div className="container">
                 <h2>BMI Calculator</h2>
-                <form class="form" onSubmit={formSubmit}>
-                    <input type="text" class="input" name="height" id="height" placeholder="Enter Height..." />
+                <form className="form" onSubmit={formSubmit}>
+                    <input type="text" className="input" name="height" id="height" placeholder="Enter Height..." />
 
-                    <input type="text" class="input" name="weight" id="weight" placeholder="Enter Weight..." />
+                    <input type="text" className="input" name="weight" id="weight" placeholder="Enter Weight..." />
                     
-                    <button type="submit" class="btn">Calculate</button>
+                    <button type="submit" className="btn">Calculate</button>
                     
                     <div id="result"></div>
                 </form>

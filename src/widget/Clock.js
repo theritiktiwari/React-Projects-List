@@ -1,37 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../theme.css';
 import './css/Clock.css';
 
 export const Clock = () => {
-    
-    const clock = () => {
-        
-        // Get the Hour, Minute and Seconds
-        let currentTime = new Date();
-        let currentHours = currentTime.getHours();
-        let currentMinutes = currentTime.getMinutes();
-        let currentSeconds = currentTime.getSeconds();
 
-        // Get AM and PM
-        let timeOfDay = (currentHours < 12) ? 'AM' : 'PM';
+    useEffect(() => {
+        const interval = setInterval(() => {
+            const date = new Date();
+            const hours = date.getHours();
+            const minutes = date.getMinutes();
+            const seconds = date.getSeconds();
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            let h = hours % 12;
+            h = h < 10 ? '0' + hours : hours;
+            const m = minutes < 10 ? '0' + minutes : minutes;
+            const s = seconds < 10 ? '0' + seconds : seconds;
+            const time = `${h} : ${m} : ${s} ${ampm}`;
+            document.getElementById('clock').innerHTML = time;
+        }, 1000);
+        return () => clearInterval(interval);
+    }, []);
 
-        // Make 12-hour Format
-        currentHours = (currentHours > 12) ? (currentHours - 12) :  currentHours;
-        currentHours = (currentHours === 0) ? 12 :  currentHours;
-
-        // Add 0 to (0-9) to make it double digit
-        currentHours = ((currentHours < 10) ? '0' : '') + currentHours;
-        currentMinutes = ((currentMinutes < 10) ? '0' : '') + currentMinutes;
-        currentSeconds = ((currentSeconds < 10) ? '0' : '') + currentSeconds;
-
-        // String to make time correct time format
-        
-        let currentTimeStr = currentHours + " : " + currentMinutes + " : " + currentSeconds + " : " + timeOfDay;
-        document.getElementById('clock').innerHTML = currentTimeStr;
-    }
 
     return (  
-        <section className="clck" onLoad={() => clock, setInterval(clock, 1000)}>
+        <section className="clck">
             <div id="clock"></div>
         </section>
     )
