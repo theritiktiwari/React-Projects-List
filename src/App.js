@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Header } from "./widget/Header";
 import { Footer } from "./widget/Footer";
-import { Content } from "./widget/Content";
+import { Landing } from "./widget/Landing";
 import { BMICalculator } from './widget/BMICalculator';
 import { Clock } from "./widget/Clock";
 import { ColorChanger } from "./widget/ColorChanger";
@@ -16,7 +16,7 @@ function App() {
 
         <Switch>
           <Route exact path="/" >
-            <Content />
+            <Landing />
             <Footer />
           </Route>
 

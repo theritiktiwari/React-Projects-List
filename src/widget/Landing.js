@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './css/Content.css';
+import './css/Landing.css';
 
-export const Content = () => {
+export const Landing = () => {
     return (
         <div className="content">
             <div className="boxes">
