@@ -3,6 +3,8 @@ import "./css/ColorChanger.css";
 
 export const ColorChanger = () => {
 
+    document.title = "Color Changer | Projects";
+
     const [title, setTitle] = useState('');
 
     let handleColor = (event) => {

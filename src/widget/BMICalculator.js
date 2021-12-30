@@ -3,6 +3,8 @@ import './css/BMICalculator.css';
 
 export const BMICalculator = () => {
 
+    document.title = "BMI Calculator | Projects";
+
     let formSubmit = (e) => {
         e.preventDefault();
         let height = parseInt(document.getElementById('height').value);

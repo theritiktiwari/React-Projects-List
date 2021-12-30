@@ -4,6 +4,8 @@ import './css/Clock.css';
 
 export const Clock = () => {
 
+    document.title = "Clock | Projects";
+
     useEffect(() => {
         const interval = setInterval(() => {
             const date = new Date();
