@@ -14,7 +14,8 @@ export const Clock = () => {
             const seconds = date.getSeconds();
             const ampm = hours >= 12 ? 'PM' : 'AM';
             let h = hours % 12;
-            h = h > 12 ? h - 12 : h < 10 ? '0' + hours : hours;
+            h = h > 12 ? h - 12 : h;
+            h = h < 10 ? '0' + hours : hours;
             const m = minutes < 10 ? '0' + minutes : minutes;
             const s = seconds < 10 ? '0' + seconds : seconds;
             const time = `${h} : ${m} : ${s} ${ampm}`;
