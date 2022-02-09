@@ -15,7 +15,7 @@ export const Clock = () => {
             const ampm = hours >= 12 ? 'PM' : 'AM';
             let h = hours % 12;
             h = h > 12 ? h - 12 : h;
-            h = h < 10 ? '0' + hours : hours;
+            h = h < 10 ? '0' + h : h;
             const m = minutes < 10 ? '0' + minutes : minutes;
             const s = seconds < 10 ? '0' + seconds : seconds;
             const time = `${h} : ${m} : ${s} ${ampm}`;
